@@ -5,7 +5,7 @@ import MasalaDosa from "../images/masala.jpg";
 import Paneer from "../images/paneer.jpg";
 import Gujrati from "../images/gujrati.jpeg";
 
-const MenuList = [
+export const MenuList = [
     {
         name: "Dosa",
         description: "A healthy and wholesome dosa preparation with the goodness of Ragi",

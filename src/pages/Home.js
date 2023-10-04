@@ -9,7 +9,8 @@ const Home = () => {
     <Layout>
       <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
-          <h1>Food Website</h1>
+          {/* <h1 sx={{textShadow: "2px 2px goldenrod",}}>Food Website</h1> */}
+          <h1>Food Wonderland</h1>
           <p>Best food in India</p>
           <Link to="/menu">
             <button>ORDER NOW!</button>

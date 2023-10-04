@@ -27,16 +27,22 @@ const Contact = () => {
             fontWeight: "bold",
             mb: 2,
             color: "goldenrod",
-            textShadow: "1px 1px black"
+            textShadow: "1px 1px black",
+          },
+          "& p": {
+            textAlign: "justify",
+            // mx: 10,
+            mr: 8,
           },
         }}
       >
-        <Typography variant="h4">Contact My Restaurant</Typography>
+        <Typography variant="h4">Contact Our Restaurant</Typography>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolor
-          similique nihil dolores! Quam nesciunt sit explicabo a culpa quidem,
-          minus laborum similique facilis ducimus doloremque iure, accusamus
-          aliquam totam.
+          Welcome to ReactBite's "Contact Us" page! We value your feedback,
+          inquiries, and suggestions, and we're here to make it easy for you to
+          get in touch with us. Whether you want to reserve a table for a
+          special occasion, have questions about our menu, or simply want to
+          share your thoughts, we're just a message away.
         </p>
       </Box>
       <Box
@@ -93,6 +99,34 @@ const Contact = () => {
             </TableBody>
           </Table>
         </TableContainer>
+      </Box>
+      <Box
+        sx={{
+          my: 5,
+          ml: 10,
+          "& h5": {
+            fontWeight: "bold",
+            mb: 2,
+            color: "goldenrod",
+            textShadow: "1px 1px black",
+          },
+          "& p": {
+            textAlign: "justify",
+            // mx: 10,
+            mr: 8,
+          },
+        }}
+      >
+        <Typography variant="h5">We Want to Hear from You:</Typography>
+        <p>
+          Your feedback is invaluable to us, and it helps us continually improve
+          our services. Whether you have a comment, suggestion, or praise for
+          our team, please don't hesitate to reach out. We look forward to
+          serving you and ensuring your dining experience at ReactBite Restaurant
+          is exceptional. Thank you for choosing ReactBite Restaurant, where
+          culinary excellence meets warm hospitality. We can't wait to assist
+          you and welcome you to our restaurant soon!
+        </p>
       </Box>
     </Layout>
   );
