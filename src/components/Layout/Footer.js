@@ -38,7 +38,7 @@ const Footer = () => {
             },
           }}
         >
-          All Rights Reserved &copy; - Aniket Chougule
+          All Right Reserved &copy; - Aniket Chougule
         </Typography>
       </Box>
     </>
