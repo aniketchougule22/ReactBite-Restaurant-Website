@@ -8,8 +8,8 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import { Link } from "react-router-dom";
+import Logo from "../../images/logo.svg"
+import { NavLink } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import "../../styles/HeaderStyle.css";
 
@@ -30,22 +30,21 @@ const Header = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <FastfoodIcon />&nbsp;
-        ReactBite Restaurant
+        <img src={Logo} alt="Logo" height={"70"} width={"200"} />
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
         <li>
-          <Link to={"/"}>Home</Link>
+          <NavLink activeClassName="active" to={"/"}>Home</NavLink>
         </li>
         <li>
-          <Link to={"/menu"}>Menu</Link>
+          <NavLink to={"/menu"}>Menu</NavLink>
         </li>
         <li>
-          <Link to={"/about"}>About</Link>
+          <NavLink to={"/about"}>About</NavLink>
         </li>
         <li>
-          <Link to={"/contact"}>Contact</Link>
+          <NavLink to={"/contact"}>Contact</NavLink>
         </li>
       </ul>
     </Box>
@@ -71,22 +70,21 @@ const Header = () => {
               component="div"
               sx={{ flexGrow: 1 }}
             >
-              <FastfoodIcon />
-              ReactBite Restaurant
+              <img src={Logo} alt="Logo" height={"70"} width={"270"} />
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <ul className="navigation-menu">
                 <li>
-                  <Link to={"/"}>Home</Link>
+                  <NavLink activeClassName="active" to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  <Link to={"/menu"}>Menu</Link>
+                  <NavLink to={"/menu"}>Menu</NavLink>
                 </li>
                 <li>
-                  <Link to={"/about"}>About</Link>
+                  <NavLink to={"/about"}>About</NavLink>
                 </li>
                 <li>
-                  <Link to={"/contact"}>Contact</Link>
+                  <NavLink to={"/contact"}>Contact</NavLink>
                 </li>
               </ul>
             </Box>
