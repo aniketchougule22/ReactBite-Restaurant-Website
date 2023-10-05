@@ -22,6 +22,7 @@ const Contact = () => {
       <Box
         sx={{
           my: 5,
+          // mx: 0,
           ml: 10,
           "& h4": {
             fontWeight: "bold",
@@ -51,6 +52,7 @@ const Contact = () => {
           width: "600px",
           ml: 10,
           "@media (max=-width: 600px)": {
+            mb: 0,
             width: "300px",
           },
         }}

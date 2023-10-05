@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from '@mui/material/Link';
 
 const Footer = () => {
   return (
@@ -26,9 +27,17 @@ const Footer = () => {
           }}
         >
           {/* icons */}
-          <InstagramIcon />
-          <LinkedInIcon />
-          <GitHubIcon />
+          <Link href="https://www.instagram.com/aniket__c/" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+          </Link>
+
+          <Link href="https://www.linkedin.com/in/aniket-chougule-637a68221" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon />
+          </Link>
+
+          <Link href="https://github.com/aniketchougule22" target="_blank" rel="noopener noreferrer">
+              <GitHubIcon />
+          </Link>
         </Box>
         <Typography
           variant="h5"
